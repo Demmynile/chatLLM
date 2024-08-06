@@ -4,12 +4,12 @@ import { getStorage } from "firebase/storage";
 
 
 const firebaseConfig = {
-        apiKey: "AIzaSyDmyQAsf17ywU5dR7eNMOm-6Rk5U_1gdyk",
-        authDomain: "chat-llm-project.firebaseapp.com",
-        projectId: "chat-llm-project",
-        storageBucket: "chat-llm-project.appspot.com",
-        messagingSenderId: "946666894768",
-        appId: "1:946666894768:web:d031b721fbab1fb53f9275"
+        apiKey: process.env.NEXT_PUBLIC_API_KEY,
+        authDomain: process.env.NEXT_PUBLIC_AUTH_DORMAIN,
+        projectId: process.env.NEXT_PUBLIC_PROJECT_ID ,
+        storageBucket: process.env.NEXT_PUBLIC_STORAGE_BUCKET,
+        messagingSenderId: process.env.NEXT_PUBLIC_MESSENGING_SENDER_ID,
+        appId: process.env.NEXT_PUBLIC_APP_ID
 };
 
 

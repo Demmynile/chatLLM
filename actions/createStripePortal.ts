@@ -26,6 +26,7 @@ export async function createStripePortal() {
     customer: stripeCustomerId,
     return_url: `${getBaseUrl()}/dashboard`,
   });
+  
 
   return session.url;
 }
